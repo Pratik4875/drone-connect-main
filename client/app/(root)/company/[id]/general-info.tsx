@@ -35,7 +35,7 @@ const GeneralInfoCompany = ({
                 className="md:size-40 size-32 bg-black"
                 src={
                   companyImage
-                    ? `https://res.cloudinary.com/dmuhioahv/image/upload/v1736958453/${companyImage}`
+                    ? `https://res.cloudinary.com/dcv9bhbly/image/upload/v1736958453/${companyImage}`
                     : ""
                 } // Display file URL if file selected, else fallback to default src
                 fallbackClassName="text-3xl"

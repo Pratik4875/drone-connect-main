@@ -60,7 +60,7 @@ const GeneralInfo = ({
                 className="md:size-40 size-32"
                 src={
                   profileImage
-                    ? `https://res.cloudinary.com/dmuhioahv/image/upload/v1736958453/${profileImage}`
+                    ? `https://res.cloudinary.com/dcv9bhbly/image/upload/v1736958453/${profileImage}`
                     : ""
                 } // Display file URL if file selected, else fallback to default src
                 fallbackClassName="text-3xl"

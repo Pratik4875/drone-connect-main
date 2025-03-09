@@ -39,7 +39,7 @@ export const columns: ColumnDef<RootObject>[] = [
             className="md:size-9 size-9"
             src={
               info.profile
-                ? `https://res.cloudinary.com/dmuhioahv/image/upload/v1736958453/${info.profile}`
+                ? `https://res.cloudinary.com/dcv9bhbly/image/upload/v1736958453/${info.profile}`
                 : ""
             } // Display file URL if file selected, else fallback to default src
             fallbackClassName="text-xl"

@@ -61,7 +61,7 @@ const CompanyInfo = ({
         <div className="flex flex-col md:flex-row items-center gap-6">
           <AvatarProfile
             className="md:size-40 size-32 rounded-xl overflow-hidden bg-muted"
-            src={`https://res.cloudinary.com/dmuhioahv/image/upload/v1736958453/${logo}`} // Display file URL if file selected, else fallback to default src
+            src={`https://res.cloudinary.com/dcv9bhbly/image/upload/v1736958453/${logo}`} // Display file URL if file selected, else fallback to default src
             fallbackClassName="text-3xl"
             fallbackText={name}
           />

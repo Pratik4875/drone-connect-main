@@ -265,6 +265,7 @@ const uregister = tryCatchWrapper(async (req, res, next) => {
             gst: null,
             website: null,
             logo: null,
+            status:"unverified"
         };
 
         const companyCollection = db.collection("company");

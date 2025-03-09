@@ -30,7 +30,7 @@ const RightSidebar = () => {
       <div className="flex-shrink-0">
         <AvatarProfile
           className="md:size-8 size-8"
-          src={imgSrc ? `https://res.cloudinary.com/dmuhioahv/image/upload/v1736958453/${imgSrc}` : ""}
+          src={imgSrc ? `https://res.cloudinary.com/dcv9bhbly/image/upload/v1736958453/${imgSrc}` : ""}
           fallbackClassName="text-md"
           fallbackText={name}
         />

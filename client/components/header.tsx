@@ -40,7 +40,7 @@ import Link from "next/link";
 import AvatarProfile from "./Avatar";
 import { useRouter } from "next/navigation";
 const CLOUDINARY_BASE_URL =
-  "https://res.cloudinary.com/dmuhioahv/image/upload/c_pad,ar_4:3,w_1600,h_1195,b_auto/v1736958453/";
+  "https://res.cloudinary.com/dcv9bhbly/image/upload/c_pad,ar_4:3,w_1600,h_1195,b_auto/v1736958453/";
 const RoleBasedNavItems: Record<
   string,
   Array<{ id: number; route: string; pathname: string; icon: LucideIcon }>

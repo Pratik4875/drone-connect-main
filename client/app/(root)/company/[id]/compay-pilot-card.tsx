@@ -22,7 +22,7 @@ const CompanyPilotCard = ({
           className="md:size-14 size-12"
           src={
             profileImage
-              ? `https://res.cloudinary.com/dmuhioahv/image/upload/v1736958453/${profileImage}`
+              ? `https://res.cloudinary.com/dcv9bhbly/image/upload/v1736958453/${profileImage}`
               : ""
           } // Display file URL if file selected, else fallback to default src
           fallbackClassName="md:text-2xl text-lg"

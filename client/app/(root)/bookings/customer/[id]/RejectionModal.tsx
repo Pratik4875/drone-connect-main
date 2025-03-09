@@ -32,7 +32,7 @@ const RejectionModal = ({
                 className="md:size-12 size-12"
                 src={
                   image
-                    ? `https://res.cloudinary.com/dmuhioahv/image/upload/v1736958453/${image}`
+                    ? `https://res.cloudinary.com/dcv9bhbly/image/upload/v1736958453/${image}`
                     : ""
                 } // Display file URL if file selected, else fallback to default src
                 fallbackClassName="text-xl"

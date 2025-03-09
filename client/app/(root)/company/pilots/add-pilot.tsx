@@ -234,7 +234,7 @@ const AddPilotCompanyModal = () => {
                         className="md:size-16 size-9"
                         src={
                           pilot.profile
-                            ? `https://res.cloudinary.com/dmuhioahv/image/upload/v1736958453/${pilot.profile}`
+                            ? `https://res.cloudinary.com/dcv9bhbly/image/upload/v1736958453/${pilot.profile}`
                             : ""
                         } // Display file URL if file selected, else fallback to default src
                         fallbackClassName="text-xl"

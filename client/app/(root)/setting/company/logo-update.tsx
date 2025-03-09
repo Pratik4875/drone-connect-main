@@ -91,7 +91,7 @@ const LogoUpdate = ({
           files
             ? getImage(files)
             : src &&
-              `https://res.cloudinary.com/dmuhioahv/image/upload/v1736958453/${src}`
+              `https://res.cloudinary.com/dcv9bhbly/image/upload/v1736958453/${src}`
         } // Display file URL if file selected, else fallback to default src
         fallbackClassName="text-3xl"
         fallbackText={fullname}
