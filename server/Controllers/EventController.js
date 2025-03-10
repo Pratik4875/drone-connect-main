@@ -15,7 +15,25 @@ cloudinary.config({
 
 // get all events
 
- if (filters.includes("name") && query_params["name"].length>0) {
+const getAllEvents = tryCatchWrapper(async (req, res, next) => {
+  const query_params = req.query;
+  const filters = Object.keys(query_params);
+  let page = 1,
+    limit = 10;
+  let aggregate = [];
+  let user_email = req.user_email;
+
+  if (filters.includes("page") && filters.includes("limit")) {
+    page = parseInt(query_params["page"]);
+    limit = parseInt(query_params["limit"]);
+  }
+
+  if (filters.includes("page") && filters.includes("limit")) {
+    page = parseInt(query_params["page"]);
+    limit = parseInt(query_params["limit"]);
+  }
+
+  if (filters.includes("name") && query_params["name"].length>0) {
       console.log("inside name")
     aggregate.push({
       $match: {
@@ -48,6 +66,7 @@ cloudinary.config({
       },
     });
   }
+
 
   const db = get_db();
   let skip = (page - 1) * limit;
@@ -123,9 +142,7 @@ cloudinary.config({
     totalPages: Math.ceil(totalEventsAfterFilter / limit),
     hasNextPage: skip + events.length < totalEventsAfterFilter,
   });
-});
-
-
+}); 
 // insert event
 
 const addEvent = tryCatchWrapper(async (req, res, next) => {
